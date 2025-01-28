@@ -27,3 +27,23 @@ const papaJohns = {
 // DO NOT EDIT THE ABOVE OBJECT // 
 
 // YOUR WORK GOES HERE // 
+
+function grabCategories(obj) {
+  return Object.keys(obj);
+}
+
+const categories = grabCategories(papaJohns);
+console.log(categories);
+
+const pizzaToppingNames = grabCategories(papaJohns.pizzaToppings);
+console.log(pizzaToppingNames);
+
+function grabValues(obj, targetNumber) {
+  return Object.values(obj).length === targetNumber;
+}
+
+const isValueCountCorrect = grabValues(papaJohns, 9);
+console.log(isValueCountCorrect);
+
+const getToppingsInfo = grabValues(papaJohns.pizzaToppings, 6);
+console.log(getToppingsInfo);
