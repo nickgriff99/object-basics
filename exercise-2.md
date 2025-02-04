@@ -22,15 +22,15 @@ Now that we can write, store, and modify objects, let's look at methods. Methods
 
 6. [x] Run this function passing in the `papaJohns` object and a target number that will make the result `false`. Then, run the function with a target number that will yield a result of `true`.
 
-7. [ ] Write a function, `getToppingsInfo`, that intakes any object representing a pizza place and returns an array of smaller arrays containing two elements each: the topping key and its price. You can assume all pizza place objects have a string key `"pizzaToppings"`.
+7. [x] Write a function, `getToppingsInfo`, that intakes any object representing a pizza place and returns an array of smaller arrays containing two elements each: the topping key and its price. You can assume all pizza place objects have a string key `"pizzaToppings"`.
 
-8. [ ] Now, without changing the previous code, add a `printAd` method to our `papaJohns` object that will announce a sale. It will intake a topping and return the following string:
+8. [x] Now, without changing the previous code, add a `printAd` method to our `papaJohns` object that will announce a sale. It will intake a topping and return the following string:
 
    `"Welcome to Papa John's! We are located at 555 Main Street. This week, we are having a sale on {topping} for ${topping price}. Better Ingredients. Better Pizza. Papa John's."`
 
-   - [ ] Run this function and pass in pizza toppings. Make sure the ad changes and displays the correct price for each one. For example, an input of `'bacon'` should announce a sale of bacon for `$3`.
+   - [x] Run this function and pass in pizza toppings. Make sure the ad changes and displays the correct price for each one. For example, an input of `'bacon'` should announce a sale of bacon for `$3`.
 
-9. [ ] **Bonus**: Refactor this function so it can handle any changes in address or slogan.
+9. [x] **Bonus**: Refactor this function so it can handle any changes in address or slogan.
 
-   - [ ] Without adjusting the original `papaJohns` object, update the slogan and address to anything you choose.
-   - [ ] Run your refactored method and ensure the new address and slogan are printed in the ad!
+   - [x] Without adjusting the original `papaJohns` object, update the slogan and address to anything you choose.
+   - [x] Run your refactored method and ensure the new address and slogan are printed in the ad!
