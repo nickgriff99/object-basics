@@ -22,6 +22,10 @@ const papaJohns = {
   address: "555 Main Street",
   zipcode: 11234,
   acceptsReservations: false,
+  printAd: function(topping, address = this.address, slogan = this.slogan) {
+    const toppingPrice = this.pizzaToppings[topping];
+    console.log(`Welcome to ${this.name}! We are located at ${this.address}. This week, we are having a sale on ${topping} for $${toppingPrice}. ${this.slogan}`);
+  },
 };
 
 // DO NOT EDIT THE ABOVE OBJECT // 
@@ -39,6 +43,7 @@ const pizzaToppingNames = grabCategories(papaJohns.pizzaToppings);
 console.log(pizzaToppingNames);
 
 function grabValues(obj, targetNumber) {
+  const values = Object.values(obj);
   return Object.values(obj).length === targetNumber;
 }
 
@@ -47,3 +52,12 @@ console.log(isValueCountCorrect);
 
 const getToppingsInfo = grabValues(papaJohns.pizzaToppings, 6);
 console.log(getToppingsInfo);
+
+function printAdWithUpdates(topping, newAddress, newSlogan) {
+  const address = newAddress || papaJohns.address;
+  const slogan = newSlogan || papaJohns.slogan;
+  papaJohns.printAd.call({ ...papaJohns, address, slogan}, topping);
+}
+
+// papaJohns.printAd();
+printAdWithUpdates("bacon", "1234 Elm Street", "The best pizza in town!");
